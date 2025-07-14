@@ -1,0 +1,162 @@
+.App_interests {
+  flex-direction: column;
+}
+
+.container-drag {
+  flex: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.header {
+  margin: 0;
+  padding-bottom: 2%;
+  text-align: left;
+  line-height: 30px;
+}
+
+.task-header {
+  flex: 20%;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.task-header img {
+  width: 100%;
+  height: auto;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.Squares {
+  display: flex;
+  flex: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.unordered_square {
+  flex: 70%;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.green_square,
+.yellow_square,
+.red_square {
+  flex: 80%;
+  min-height: 150px;
+  margin: 5%;
+  /*Flex-Layout für die Kinder (Draggable)*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-self: flex-start;
+  border: 3px solid #b0b8c9;
+  border-radius: 10px;
+}
+
+.green_square:hover,
+.yellow_square:hover,
+.red_square:hover {
+  background-color: #d2e2f2;
+}
+
+.draggable {
+  color: #9197a3;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #dae2ec;
+  padding: 10px 15px 10px 15px;
+  margin: 2% 2% 2% 2%;
+  text-align: center;
+  max-height: 45px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.198);
+  cursor: grab;
+}
+
+.draggable:hover {
+  background-color: #6492b8;
+  color: white;
+}
+
+.draggable::after {
+  cursor: grabbing;
+}
+
+.Leftsite {
+  display: flex;
+  flex: 40%;
+  margin-right: 10%;
+  flex-direction: column;
+}
+
+.DrawImage {
+  margin: 0% 5% 0% 5%;
+  flex: 10%;
+  align-self: center;
+}
+
+.DrawImage img {
+  width: 80%;
+  height: auto;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.Destination {
+  flex: 40%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .Squares {
+    flex-direction: column;
+  }
+  .container-drag {
+    margin: 5%;
+  }
+  .Leftsite {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Destination {
+    flex-direction: column;
+  }
+  .green_square,
+  .yellow_square,
+  .red_square {
+    min-width: 200px;
+    align-self: center;
+  }
+  .task-header img {
+    width: 50%;
+  }
+  .header {
+    margin: 10% 0 10% 0;
+    align-self: center;
+  }
+}

@@ -1,0 +1,152 @@
+.App_company {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smallBoxes {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5%;
+}
+
+.smallInfobox {
+  flex: 10%;
+  flex-direction: column;
+  padding: 4% 4% 4% 0;
+}
+
+.smallInfobox img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+ol {
+  list-style-type: disc;
+  color: #919ba2;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.ProductPhases {
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+
+  /*background-image: url(./img/dottedLine.png);
+  background-repeat: no-repeat;
+  background-position-x: 18%;
+*/
+}
+
+.ProductProcess {
+  padding: 5% 0 5% 0;
+}
+
+.Phase {
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+}
+
+.Phase img {
+  max-width: 300px;
+  height: auto;
+  flex: 2%;
+  align-self: flex-start;
+}
+
+.PhaseContent {
+  display: flex;
+  flex-direction: column;
+  flex: 95%;
+  padding-left: 10%;
+}
+
+.PhaseContent p {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.Worktogether {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 10%;
+}
+
+.Worktogether button {
+  color: #9197a3;
+  font-weight: bold;
+  display: flex;
+  background-color: #dae2ec;
+  padding: 10px 15px 10px 15px;
+  margin: 10px 10px 10px 0;
+  border: none;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.Workwithus {
+  flex: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.WorkwithUniversity {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.WorkwithUniversity button {
+  align-self: flex-start;
+}
+
+.Workwithus h3 {
+  flex: 100%;
+}
+
+.headertop {
+  margin: 5% 0 0 0;
+  padding-bottom: 2%;
+  text-align: left;
+  line-height: 30px;
+}
+
+.Contact {
+  margin-bottom: 10%;
+}
+
+.Contact p {
+  max-width: 500px;
+  margin-top: 5%;
+  line-height: 20px;
+}
+.Contact a {
+  color: #6492b8;
+}
+
+@media screen and (max-width: 700px) {
+  .App_company {
+    flex-direction: column;
+  }
+
+  .smallBoxes {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .smallInfobox {
+    align-self: center;
+  }
+
+  .smallInfobox p,
+  .smallInfobox ol {
+    align-self: center;
+  }
+}

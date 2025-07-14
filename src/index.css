@@ -1,0 +1,161 @@
+body {
+  background-color: #f2f5f9;
+  font: 13px "Calibri", Futura, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin: 0;
+  height: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  touch-action: auto;
+}
+
+.App {
+  flex: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.App_output {
+  flex: 100%;
+  display: flex;
+  margin: 0 10% 0 10%;
+}
+
+.App_interests,
+.App_personal,
+.App_company {
+  flex: 100%;
+  display: flex;
+  margin: 0 20% 0 20%;
+}
+
+h1,
+h2,
+h3 {
+  color: #808c92;
+}
+p {
+  font-weight: lighter;
+  color: #29292c;
+}
+
+a {
+  margin: none;
+  text-decoration: none;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0 2% 0;
+  justify-content: flex-start;
+}
+
+.PageText {
+  width: 50%;
+}
+
+.PageText p {
+  max-width: 470px;
+  margin-bottom: 6.5%;
+  font-size: 14px;
+}
+
+.ColoredLine {
+  width: 70%;
+  margin: 2% 0 2% 0;
+  height: 2px;
+  background-color: #a4adbf;
+}
+
+.smallColoredLine {
+  width: 30%;
+  margin: 2% 0 2% 0;
+  height: 2px;
+  background-color: #a4adbf;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.Button {
+  margin-right: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.Button a {
+  text-decoration: none;
+}
+
+.Button button {
+  padding: 10px 15px 10px 15px;
+  background: none;
+  color: #6492b8;
+  border: 2px solid #6492b8;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.Button button:hover {
+  background: #6492b8;
+  color: white;
+}
+
+.Button button:active {
+  background: #6492b8;
+  color: white;
+  border-top: 4px solid #56789f;
+}
+
+.Footer {
+  display: flex;
+  flex: 100%;
+  margin-top: 5%;
+  height: 100px;
+  background-color: #dde6ef;
+}
+
+@media screen and (max-width: 700px) {
+  .Nav {
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+
+  .App_output,
+  .App_interests,
+  .App_personal,
+  .App_company {
+    flex: 100%;
+    display: flex;
+    margin: 5%;
+  }
+
+  .Leftsite {
+    flex: 100% !important;
+    margin-right: 0 !important;
+    flex-direction: row !important;
+  }
+
+  .PageText {
+    max-width: 50%;
+    align-self: center;
+  }
+
+  .Button button {
+    display: flex;
+    margin: 5%;
+  }
+}

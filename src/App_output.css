@@ -1,0 +1,139 @@
+.App_output {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.Activities {
+  display: flex;
+  flex-direction: column;
+}
+
+.Activity {
+  flex: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  margin: 4% 0 4% 0;
+}
+
+.Activity p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.ActivityImage {
+  margin: 0 2% 0 2%;
+  flex: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ActivityImage img {
+  width: 120%;
+  height: auto;
+}
+
+.ActivityDescription {
+  display: flex;
+  flex: 33.3%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0 2% 0 2%;
+}
+
+.ActivityDetail {
+  display: flex;
+  flex: 33.3%;
+  height: 100%;
+  flex-direction: column;
+  padding: 0 2% 0 2%;
+}
+
+.ActivityDetail img {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+.ActivityDetailTabmenu {
+  display: flex;
+  flex: 100%;
+  margin-bottom: 2%;
+}
+
+.TaskAreaButtons {
+  flex: 100%;
+  margin: 2% 0 2% 0;
+}
+
+.Activityhead {
+  margin-top: 0;
+  line-height: 30px;
+}
+
+.Activitydescription {
+  flex: 90%;
+}
+
+.PercentNumber {
+  color: #808c92;
+  font-weight: normal;
+}
+
+.Activityfield {
+  padding: 2% 3% 2% 3%;
+  margin: 0.5%;
+  border: 2px solid #ffdd8c;
+  border-radius: 22.5px;
+}
+
+.Activityfield:hover {
+  background-color: #efece2 !important;
+}
+
+.Tabmenu {
+  /*flex: 20%;*/
+  display: flex;
+}
+
+.Jobs,
+.UCD,
+.DD {
+  flex: 33%;
+  border: 1px solid #c4cccd;
+  border-bottom: none;
+  padding: 2% 3% 2% 3%;
+  margin-right: 0.5%;
+  border-radius: 10px 10px 0 0;
+}
+
+.Jobs:hover,
+.UCD:hover,
+.DD:hover {
+  background-color: #becad7 !important;
+}
+
+.Fielddescription {
+  flex: 100%;
+  margin: 2% 0 2% 0;
+}
+
+@media screen and (max-width: 700px) {
+  .Activity {
+    flex-direction: column;
+  }
+
+  .ActivityImage {
+    align-self: center;
+  }
+
+  .Activityhead {
+    margin: 10% 0 0 0;
+  }
+
+  .ActivityDetailTabmenu {
+    margin-top: 10%;
+  }
+}
